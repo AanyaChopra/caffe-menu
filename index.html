@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>☕ Cafe Delight | Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>☕ Cafe Delight</h1>
+            <p>Freshly Brewed • Made with Love</p>
+        </header>
+
+        <div class="menu-tabs">
+            <button class="tab-btn active" data-category="all">All</button>
+            <button class="tab-btn" data-category="coffee">Coffee ☕</button>
+            <button class="tab-btn" data-category="dessert">Dessert 🍰</button>
+            <button class="tab-btn" data-category="sandwich">Sandwich 🥪</button>
+        </div>
+
+        <div class="menu-grid" id="menuGrid"></div>
+
+        <div class="cart">
+            <button class="cart-btn" id="cartBtn">🛒 Cart <span id="cartCount">0</span></button>
+        </div>
+
+        <div class="cart-sidebar" id="cartSidebar">
+            <h3>Your Order</h3>
+            <div id="cartItems"></div>
+            <p>Total: ₹<span id="cartTotal">0</span></p>
+            <button class="checkout" id="checkoutBtn">Checkout</button>
+            <button class="close-cart" id="closeCart">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

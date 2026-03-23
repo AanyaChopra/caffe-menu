@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #fef7e8;
+    color: #5a3e2b;
+    padding: 2rem;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #c47a5c;
+}
+
+.menu-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.tab-btn {
+    padding: 8px 20px;
+    border: 2px solid #e8bc9e;
+    background: white;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #c47a5c;
+}
+
+.tab-btn.active {
+    background: #e8bc9e;
+    color: white;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.menu-card {
+    background: white;
+    border-radius: 15px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.menu-card h3 {
+    color: #c47a5c;
+    margin: 10px 0;
+}
+
+.price {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #e8bc9e;
+    margin: 10px 0;
+}
+
+.add-btn {
+    background: #c47a5c;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.cart-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #c47a5c;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.cart-sidebar {
+    position: fixed;
+    top: 0;
+    right: -350px;
+    width: 300px;
+    height: 100vh;
+    background: white;
+    padding: 1.5rem;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.cart-sidebar.open {
+    right: 0;
+}
+
+.close-cart {
+    margin-top: 1rem;
+    background: #ddd;
+    border: none;
+    padding: 8px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.checkout {
+    background: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
